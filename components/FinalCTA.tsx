@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function FinalCTA() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 py-32 bg-gradient-to-b from-[#050505] via-[#0a0a0a] to-[#050505] border-t border-white/5 relative overflow-hidden">
+    <section className="min-h-screen flex flex-col items-center justify-center px-6 py-32 bg-transparent border-t border-white/5 relative overflow-hidden">
       {/* Background glow effect */}
       <motion.div
         className="absolute inset-0 opacity-30"
@@ -14,7 +14,7 @@ export default function FinalCTA() {
         viewport={{ once: true }}
         transition={{ duration: 1.5 }}
       >
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-yellow-500/10 via-white/5 to-cyan-500/10 blur-3xl rounded-full" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-linear-to-r from-yellow-500/10 via-white/5 to-cyan-500/10 blur-3xl rounded-full" />
       </motion.div>
 
       {/* Content */}
@@ -91,7 +91,7 @@ export default function FinalCTA() {
 
       {/* Pulsing accent */}
       <motion.div
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-64 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-64 h-px bg-linear-to-r from-transparent via-white/20 to-transparent"
         animate={{
           opacity: [0.3, 0.6, 0.3],
           scaleX: [1, 1.2, 1],

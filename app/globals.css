@@ -1,14 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 5, 5, 5;
-  --background-end-rgb: 5, 5, 5;
+  /* Dark Mode (Default) */
+  --background: #0A0F1A;
+  --surface: #111827;
+  --primary: #F1F5F9;
+  --secondary: #94A3B8;
+  --accent-cyan: #14B8A6;
+  --accent-gold: #EAB308;
+  --secondary-cyan: #67E8F9;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: #050505;
+  color: var(--primary);
+  background-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
@@ -19,16 +25,13 @@ body {
 ::-webkit-scrollbar {
   width: 8px;
 }
-
 ::-webkit-scrollbar-track {
-  background: #050505;
+  background: var(--background);
 }
-
 ::-webkit-scrollbar-thumb {
-  background: #1a1a1a;
+  background: var(--surface);
   border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #2a2a2a;
 }
@@ -36,7 +39,7 @@ body {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #1a1a1a #050505;
+  scrollbar-color: var(--surface) var(--background);
 }
 
 /* Reduced Motion Support */

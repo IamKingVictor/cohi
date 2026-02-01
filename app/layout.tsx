@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import LenisProvider from "@/components/LenisProvider"
+import Navigation from "@/components/Navigation"
+import GlobalBackground from "@/components/GlobalBackground"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -18,7 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <LenisProvider>{children}</LenisProvider>
+        <LenisProvider>
+          <GlobalBackground />
+          <Navigation />
+          {children}
+        </LenisProvider>
       </body>
     </html>
   )
