@@ -2,13 +2,14 @@
 
 :root {
   /* Dark Mode (Default) */
-  --background: #0A0F1A;
-  --surface: #111827;
-  --primary: #F1F5F9;
+  /* Dark Mode (Default) */
+  --background: #021511;
+  --surface: #03201B;
+  --primary: #F0FDFC;
   --secondary: #94A3B8;
-  --accent-cyan: #14B8A6;
-  --accent-gold: #EAB308;
-  --secondary-cyan: #67E8F9;
+  --accent-cyan: #7CFEE7;
+  --accent-gold: #FACC15;
+  --secondary-cyan: #22D3EE;
 }
 
 body {

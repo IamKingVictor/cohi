@@ -22,8 +22,12 @@ export default function Navigation() {
       className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 backdrop-blur-md bg-[#0A0F1A]/70 border-b border-white/5"
     >
       <Link href="/" className="group relative z-50">
-        <span className="text-2xl font-bold tracking-tighter text-white group-hover:text-[#14B8A6] transition-colors duration-300">
-          cohi
+        <span className="text-2xl font-bold tracking-tighter text-white transition-colors duration-300">
+          c
+          <span className="inline-block bg-gradient-to-r from-[#FACC15] to-[#22D3EE] bg-clip-text text-transparent mx-[1px]">
+            o
+          </span>
+          hi
         </span>
       </Link>
 
